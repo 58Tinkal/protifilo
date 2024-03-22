@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@1,100&family=Poppins:wght@400;700&family=Sofia+Sans+Extra+Condensed:wght@100&display=swap" rel="stylesheet">
+    <style>
+        *{
+               margin: 0;
+               padding: 0;
+                
+        }
+    body{
+        background-color: rgb(0, 0, 33);
+        color: white;
+        font-family: 'Poppins', sans-serif;
+ 
+
+    }
+    nav{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 80px;
+        background-color: rgb(18, 18, 62);
+    }
+    nav ul{
+        display: flex;
+        justify-content: center;
+     
+    }
+    nav ul li{
+        list-style: none;
+        margin: 0 23px;
+    }
+    nav ul li a{
+       text-decoration: none;
+       color: white;
+    }
+    nav ul li a:hover{
+       font-size: 1.01rem;
+       color: rgb(221, 202, 202);
+    }
+    .main hr{
+      border: 0;
+      background:#9c97f1 ;
+      height: 1.2px;
+      margin: 40px 84px;
+    }
+    .left{
+        font-size: 1.5rem;
+    }
+    .first{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 140px 0;
+    }
+     .first  > div{
+        width: 30%;
+     }
+     .leftsection{
+        font-size: 2rem;
+     }
+    
+   .rightsection img{
+     width: 80%;
+   }
+   .purple{ 
+     color: rgb(175, 118, 229);
+   }
+   .text-gray{
+    color: gray;
+   }
+   #element{
+    color:  rgb(175, 118, 229) ;
+   }
+   .second{
+    max-width: 80wh;
+    margin: auto;
+    height: 80vh;
+    padding-left: 61px;
+  padding-top: 17px; 
+   }
+   .second .box{
+    background-color: white;
+    width: 80vw;
+    height: 2px;
+    margin: 56px 65;
+   }
+    </style>
+</head>
+<body> 
+  <header>
+    <nav>
+        <div class="left">Tinkal's Portfollio</div>
+        <div class="right"> 
+            <ul>
+               <li> <a href="/">Home</a></li>
+               <li> <a href="/">About</a></li>
+                <li><a href="/">Services</a></li>
+                <li><a href="/">Projects</a></li> 
+                <li><a href="/">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+  </header>    
+   <main> 
+      <section class="first">
+    <div class="leftsection">
+     Hi,My name is<span class="purple"> Tinkal.</span>
+    
+     <div class="">and I am a passionate. </div>
+     <div class="">Web Devloper</div>
+     <span id="element"></span>
+    </div>
+    <div class="rightsection">
+        <img src="dev.png " alt="">
+    </div>
+      </section>
+      <hr> 
+      <section class="second">
+       <span class="text-gray">What I have done so far</span>
+        <h1>Work Experience</h1>
+        <div class="box"></div>
+      </section>
+   </main>  
+   <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+   <script>
+    var typed = new Typed('#element', {
+      strings: ['Web Devloper', 'and Competitive Programmer'],
+      typeSpeed: 51,
+    });
+  </script
+</body>
+</html>
